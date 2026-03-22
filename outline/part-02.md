@@ -102,13 +102,13 @@
 - **2-3-6 Plugins**
   - 種類: 混合
   - ゴール: 拡張機能をパッケージ化して共有する仕組みを理解する
-  - 🏃 実践: Plugin を1から作成する
+  - 🏃 実践: 公式マーケットプレイスから Plugin をインストールし、`/skill-creator` で Plugin を作成する
   - 公式ドキュメント: [Plugins](https://code.claude.com/docs/en/plugins), [Discover Plugins](https://code.claude.com/docs/en/discover-plugins)
 
 - **2-3-7 Git と Worktree**
   - 種類: 混合
   - ゴール: Claude Code の Git 連携と並列開発の仕組みを理解する
-  - 🏃 実践: Git 操作 + Worktree で並列作業する
+  - 🏃 実践: チェックポイントからの Rewind を体験し、Worktree で並列作業する
   - 公式ドキュメント: [Git Integration](https://code.claude.com/docs/en/git-integration), [Checkpointing](https://code.claude.com/docs/en/checkpointing), [Worktrees](https://code.claude.com/docs/en/worktrees)
 
 - **2-3-8 GitHub Actions**
