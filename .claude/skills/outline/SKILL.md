@@ -27,7 +27,7 @@ argument-hint: "[モード(任意)] [スコープ] [追加指示(任意)]"
 ## 再構成モード
 
 1. **変更計画**: 変更内容・影響範囲・番号変更マッピングを提示し承認を得る
-2. **outline 更新**: `outline/part-XX.md` と `outline/CLAUDE.md` の依存関係マップを更新
+2. **outline 更新**: `outline/part-XX.md` を更新
 3. **影響ファイル更新**: root `CLAUDE.md`、`curriculums/` 配下で構成を参照している Section
 4. **整合性検証**: 番号の抜け・重複、Grep で旧番号の残留を検索
 

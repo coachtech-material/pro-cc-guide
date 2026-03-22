@@ -57,16 +57,19 @@ CLAUDE.md は教材の哲学（WHO / WHY / WHAT / HOW）を定義し、`outline/
 
 ```
 pro-cc-guide/
-├── CLAUDE.md              # 教材の哲学・カリキュラム・プロジェクトマップ
-├── outline/               # カリキュラム設計（Part/Chapter/Section 設計）
+├── CLAUDE.md                # 教材の哲学・カリキュラム・プロジェクトマップ
+├── outline/                 # カリキュラム設計（Part/Chapter/Section 設計）
 │   └── part-01.md ~ part-04.md
 ├── .claude/
-│   ├── skills/            # 作業手順（執筆・レビュー・更新・構成変更）
-│   └── rules/             # 表記ルール
-├── curriculums/           # 教材本体
+│   ├── rules/
+│   │   └── writing.md       # 執筆ルール（文体・構造・コンテンツ）
+│   ├── skills/              # Skill 定義（write, review, outline, check-updates）
+│   ├── settings.json        # 権限設定
+│   └── settings.local.json  # ローカル設定（gitignore 対象）
+├── curriculums/             # 教材本体
 │   └── part-XX_タイトル/chapter-XX_タイトル/X-X-X_タイトル.md
-├── assets/                # 画像（assets/part-XX/chapter-XX/）
-└── memo/                  # 作業メモ置き場（教材の執筆プロセスでは参照しない）
+├── assets/                  # 画像（assets/part-XX/chapter-XX/）
+└── memo/                    # 作業メモ（教材の執筆プロセスでは参照しない）
 ```
 
 - Part ディレクトリ: `part-XX_タイトル/`（01始まり、ゼロパディング）
