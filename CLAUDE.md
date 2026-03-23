@@ -15,6 +15,14 @@
 - **開発環境・ツール**: ターミナル、Docker Compose、Git/GitHub（ブランチ運用、PR、コードレビュー）
 - **AI活用**: ChatGPT を少し触った程度。AI コーディングツールの経験は問わない
 
+### 技術スタック
+
+- **Laravel 10**: `composer create-project` でバージョンを明示してインストールする（`laravel.build` は最新版がインストールされるため使用しない）
+- **Laravel Sail**: Docker ベースの開発環境。`composer require laravel/sail --dev` + `sail:install --with=mysql` で導入
+- **フロントエンド**: Tailwind CSS v3 + Alpine.js + Vite。`sail npm install` / `sail npm run dev` で Sail コンテナ内で実行（ホストマシンへの Node.js インストールは不要）
+- **Claude アカウント**: Pro（20ドル）プランが最低条件、Max プラン推奨
+- **Claude Code**: ネイティブインストール（curl / Homebrew / WinGet）推奨。npm インストールは非推奨
+
 ## コンセプト（WHY）
 
 AI で一人の生産性が上がり企業の採用が慎重になる中、Pro生 がミドル・シニア相当のバリューを出せるよう Claude Code を使いこなせるようになることを目指す。
