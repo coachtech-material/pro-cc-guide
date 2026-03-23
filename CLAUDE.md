@@ -18,7 +18,7 @@
 ### 技術スタック
 
 - **Laravel 10**: `composer create-project` でバージョンを明示してインストールする（`laravel.build` は最新版がインストールされるため使用しない）
-- **Laravel Sail**: Docker ベースの開発環境。`composer require laravel/sail --dev` + `sail:install --with=mysql` で導入
+- **Laravel Sail**: Docker ベースの開発環境。`composer require laravel/sail --dev` + `sail:install --with=mysql` で導入。phpMyAdmin は必要に応じて `compose.yaml` に追加（COACHTECH 受講中教材と同じ構成）
 - **Claude アカウント**: Pro（20ドル）プランが最低条件、Max プラン推奨
 - **Claude Code**: ネイティブインストール（curl / Homebrew / WinGet）推奨。npm インストールは非推奨
 
