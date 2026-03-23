@@ -177,11 +177,11 @@ Claude Code にはあらかじめ組み込まれた Skills があります。
 
 ---
 
-## 🏃 実践: Skill を作成する
+## 🏃 実践: Skill を作成・使用・改善する
 
-cc-practice プロジェクトに、簡単な Skill を1つ作成してみましょう。
+cc-practice に、Laravel のコードを解説する Skill を作成し、使って、改善するサイクルを体験しましょう。
 
-### Step 1: Skill ディレクトリを作成する
+### Step 1: Skill を作成する
 
 Claude Code を起動し、以下のように指示します。
 
@@ -189,7 +189,7 @@ Claude Code を起動し、以下のように指示します。
 > .claude/skills/explain/ ディレクトリに SKILL.md を作成して。内容は以下の通り:
 > - name: explain
 > - description: 指定されたファイルのコードを初心者向けに解説する
-> - 本文: 「$ARGUMENTS で指定されたファイルを読み、初心者にもわかるように日本語で解説してください。各関数やブロックの役割を説明し、重要なポイントには💡を付けてください。」
+> - 本文: 「$ARGUMENTS で指定されたファイルを読み、初心者にもわかるように日本語で解説してください。Laravel の規約やデザインパターンに関連する部分は特に丁寧に説明してください。各メソッドの役割を説明し、重要なポイントには💡を付けてください。」
 ```
 
 Claude Code が `.claude/skills/explain/SKILL.md` を作成します。
@@ -198,23 +198,41 @@ Claude Code が `.claude/skills/explain/SKILL.md` を作成します。
 
 ### Step 2: Skill を使ってみる
 
-作成した Skill を使ってみましょう。まず、解説対象のファイルが必要です。
+作成した Skill を、2-3-1 で作成した DailyReportController に対して使ってみましょう。
 
 ```
-> シンプルな JavaScript のユーティリティファイル（日付のフォーマット、文字列の切り詰めなど）を utils.js として作成して
+/explain app/Http/Controllers/DailyReportController.php
 ```
 
-ファイルが作成されたら、先ほどの Skill を使います。
+Claude Code が `explain` Skill を読み込み、DailyReportController の内容を初心者向けに解説してくれます。スラッシュコマンド1つで、毎回同じ品質の解説が得られるようになりました。
+
+### Step 3: Skill を改善する
+
+出力を確認して、改善の余地がないか考えてみましょう。たとえば「バリデーションの流れも説明してほしい」「関連するファイル（Model、FormRequest）も合わせて解説してほしい」といった改善点が見つかるかもしれません。
 
 ```
-> /explain utils.js
+> .claude/skills/explain/SKILL.md を改善して。
+> 対象ファイルが Controller の場合は、関連する Model や FormRequest も読んで、全体の流れを解説するようにして。
+> また、解説の最後に「🔍 確認ポイント」として、このコードをレビューするときに注目すべき点を3つ挙げるようにして
 ```
 
-Claude Code が `explain` Skill を読み込み、utils.js の内容を初心者向けに解説してくれます。スラッシュコマンド1つで、毎回同じ品質の解説が得られるようになりました。
+改善された Skill で再度試してみましょう。
 
-### Step 3: Skill の一覧を確認する
+```
+/explain app/Http/Controllers/DailyReportController.php
+```
+
+1回目と比べて、解説の質が向上していることを確認してください。
+
+### Step 4: Skill の一覧と成果物を確認する
 
 `/` と入力して Tab キーを押すと、利用可能な Skills の一覧が表示されます。先ほど作成した `explain` が一覧に含まれていることを確認してください。
+
+```bash
+! cat .claude/skills/explain/SKILL.md
+```
+
+Skill のファイルが cc-practice に残っていることを確認しましょう。この Skill は今後の学習でも使えます。
 
 ---
 
@@ -224,7 +242,7 @@ Claude Code が `explain` Skill を読み込み、utils.js の内容を初心者
 
 - [ ] **正しさ**: frontmatter の `name` と `description` が正しく記述されているか。スラッシュコマンドで呼び出せるか
 - [ ] **品質**: `description` が具体的か。自動呼び出しの判定に使えるレベルの記述になっているか
-- [ ] **安全性**: 該当なし（設定ファイルの作成のみで、外部への影響はない）
+- [ ] **安全性**: `description` が曖昧すぎないか。曖昧な description は、意図しない場面で Skill が自動呼び出しされる原因になる（例: 「コードを見る」のような汎用的な description だと、関係ないタスクでも呼び出される可能性がある）
 
 > 🔑 この Section では特に「description の具体性」に注目してください。
 
