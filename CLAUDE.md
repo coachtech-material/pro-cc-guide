@@ -19,7 +19,6 @@
 
 - **Laravel 10**: `composer create-project` でバージョンを明示してインストールする（`laravel.build` は最新版がインストールされるため使用しない）
 - **Laravel Sail**: Docker ベースの開発環境。`composer require laravel/sail --dev` + `sail:install --with=mysql` で導入
-- **フロントエンド**: Tailwind CSS v3 + Alpine.js + Vite。`sail npm install` / `sail npm run dev` で Sail コンテナ内で実行（ホストマシンへの Node.js インストールは不要）
 - **Claude アカウント**: Pro（20ドル）プランが最低条件、Max プラン推奨
 - **Claude Code**: ネイティブインストール（curl / Homebrew / WinGet）推奨。npm インストールは非推奨
 
