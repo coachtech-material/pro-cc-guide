@@ -288,6 +288,8 @@ claude --worktree experiment
 
 元のディレクトリで、ファイルが影響を受けていないことを確認します。
 
+ターミナルで以下のコマンドを実行して、Worktree 外のファイルが変更されていないことを確認します。
+
 ```bash
 cat resources/views/daily-reports/index.blade.php
 ```

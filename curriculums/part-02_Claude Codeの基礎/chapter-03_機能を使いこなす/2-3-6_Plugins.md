@@ -171,7 +171,7 @@ Claude Code を起動し、以下のコマンドを実行します。
 /plugin install plugin-dev@claude-plugins-official
 ```
 
-> 📝 あなたの環境ではこの Plugin が利用できない場合があります。その場合は、一覧に表示されている別の Plugin を試してください。
+> 📝 あなたの環境ではこの Plugin が利用できない場合があります。その場合は、Step 1 の一覧に表示されている別の Plugin 名に読み替えてインストールしてください。一覧自体が表示されない、またはマーケットプレイスに接続できない場合は、Step 2〜3 をスキップして Step 4（自作 Plugin）に進んでください。自作 Plugin の実践だけでも Plugin の仕組みは十分に理解できます。
 
 ### Step 3: インストールされた Plugin を確認する
 
