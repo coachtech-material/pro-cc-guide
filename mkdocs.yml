@@ -35,8 +35,7 @@ theme:
     - search.highlight
     - content.code.copy
     - toc.follow
-  icon:
-    logo: fontawesome/solid/terminal
+  icon: {}
 
 extra:
   generator: false
