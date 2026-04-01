@@ -30,7 +30,7 @@
     - Desktop アプリ（GUI、ビジュアル diff、Dispatch によるモバイルからのタスク送信）
     - Agent Teams（複数セッションの協調。リードがタスクを分配し並行作業。実験的機能）
     - Channels（Discord / Telegram 等から実行中セッションに通知をプッシュ。Research Preview）
-    - Agent SDK / Headless Mode（`claude -p` によるプログラマティック実行。CI/CD 連携）
+    - Agent SDK（`claude -p` によるプログラマティック実行。CI/CD 連携。旧称: Claude Code SDK / Headless Mode）
     - Remote Control（モバイルや claude.ai/code からローカルセッションを操作）
     - Chrome 連携（Claude in Chrome 拡張でライブ Web アプリをデバッグ。beta）
     - Slack 連携（`@Claude` メンションでタスク自動検出・PR 作成）

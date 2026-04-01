@@ -9,7 +9,7 @@
 
 3-2-1 で学んだ方法論（探索→検索→転写→理解→増強の5ステップ）を、全体像→構造→フローの流れで CourseHub のコードに適用し、実際に読み解きます。
 
-> 📝 このハンズオンで使う機能: Sub-agents（[2-3-5 Sub-agents](../../part-02_Claude%20Codeの基礎/chapter-03_機能を使いこなす/2-3-5_Sub-agents.md) で学習）、MCP（[2-3-4 MCP](../../part-02_Claude%20Codeの基礎/chapter-03_機能を使いこなす/2-3-4_MCP.md) で学習）、`/context`・`/compact`・`/btw`（[2-2-2 コンテキストとセッション管理](../../part-02_Claude%20Codeの基礎/chapter-02_基本を理解する/2-2-2_コンテキストとセッション管理.md) で学習）
+> 📝 このセクションで使う機能: Sub-agents（[2-3-5 Sub-agents](../../part-02_Claude%20Codeの基礎/chapter-03_機能を使いこなす/2-3-5_Sub-agents.md) で学習）、MCP（[2-3-4 MCP](../../part-02_Claude%20Codeの基礎/chapter-03_機能を使いこなす/2-3-4_MCP.md) で学習）、`/context`・`/compact`・`/btw`（[2-2-2 コンテキストとセッション管理](../../part-02_Claude%20Codeの基礎/chapter-02_基本を理解する/2-2-2_コンテキストとセッション管理.md) で学習）
 
 ---
 
@@ -582,6 +582,8 @@ Event のキューイング（非同期実行）、ブロードキャスト、Jo
 - [ ] `/compact` でコンテキストを整理した
 - [ ] `EnrollmentService`（Service クラス）が何をしているか、なぜ使われているかを自分の言葉で説明できる
 - [ ] `CourseCompleted` Event と `UpdateEnrollmentStatus` Listener の関係を自分の言葉で説明できる
+
+> 📝 このセクションの実践はコードリーディングが目的であり、コード生成を伴わないため、🔍 見極めチェックは省略します。
 
 ---
 

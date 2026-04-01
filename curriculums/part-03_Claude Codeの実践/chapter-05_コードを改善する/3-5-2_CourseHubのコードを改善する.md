@@ -9,7 +9,7 @@
 
 2つの問題を改善します。1つ目の Fat Controller で「コード構造の改善」のアプローチを実践し、2つ目の N+1 クエリで「パフォーマンスの改善」のアプローチを実践します。
 
-> 📝 このハンズオンで使う機能: Plan Mode（[2-3-1 Plan Mode](../../part-02_Claude%20Codeの基礎/chapter-03_機能を使いこなす/2-3-1_Plan%20Mode.md) で学習）、`/test` Skill（[3-1-3 プロジェクトの規約・設定を確認する](../chapter-01_実践の準備/3-1-3_プロジェクトの規約・設定を確認する.md) で更新）、Worktree（[2-3-7 Git と Worktree](../../part-02_Claude%20Codeの基礎/chapter-03_機能を使いこなす/2-3-7_GitとWorktree.md) で学習）、`/cost`、`/context`
+> 📝 このセクションで使う機能: Plan Mode（[2-3-1 Plan Mode](../../part-02_Claude%20Codeの基礎/chapter-03_機能を使いこなす/2-3-1_Plan%20Mode.md) で学習）、`/test` Skill（[3-1-3 プロジェクトの規約・設定を確認する](../chapter-01_実践の準備/3-1-3_プロジェクトの規約・設定を確認する.md) で更新）、Worktree（[2-3-7 GitとWorktree](../../part-02_Claude%20Codeの基礎/chapter-03_機能を使いこなす/2-3-7_GitとWorktree.md) で学習）、`/cost`、`/context`
 
 ---
 

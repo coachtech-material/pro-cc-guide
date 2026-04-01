@@ -51,7 +51,7 @@ Part 3 のメインは、実務で日常的に発生する3つのタスクを Cl
 
 ## AI がルーティンの 70% を処理し、人間の価値は残り 30% に集中する
 
-Google Chrome チームのエンジニアリングリーダーである Addy Osmani 氏は、記事「[The 70% problem: Hard truths about AI-assisted coding](https://addyo.substack.com/p/the-70-problem-hard-truths-about)」で、AI を活用したコーディングについて「70% の問題」という考え方を提唱しています。
+Google Chrome チームのエンジニアリングリーダーである Addy Osmani 氏は、記事「[The 70% Problem: Hard truths about AI-assisted coding](https://addyo.substack.com/p/the-70-problem-hard-truths-about)」で、AI を活用したコーディングについて「70% の問題」という考え方を提唱しています。
 
 AI はタスクの約 70% を処理できます。定型的なコードの生成、既知のパターンの適用、ボイラープレートの作成など、ルーティンワークの大部分を高速にこなします。しかし残りの 30%、つまりエッジケースの処理、アーキテクチャ上の判断、セキュリティの考慮、ビジネスロジックの正確な反映には、人間の判断が必要です。
 
