@@ -1,4 +1,4 @@
-site_name: Claude Code 実践ガイド
+site_name: Pro生 × Claude Code ガイド
 site_description: COACHTECH Pro生向け Claude Code 教材
 site_url: https://coachtech-material.github.io/pro-cc-guide/
 
@@ -10,15 +10,15 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
-      accent: indigo
+      primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-7
         name: ダークモードに切り替え
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
-      accent: indigo
+      primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-4
         name: ライトモードに切り替え
@@ -36,7 +36,7 @@ theme:
     - content.code.copy
     - toc.follow
   icon:
-    logo: material/book-open-variant
+    logo: material/terminal
 
 extra:
   generator: false
@@ -69,7 +69,7 @@ markdown_extensions:
       permalink: true
 
 nav:
-  - Home: index.md
+  - トップ: index.md
   - Part 1 はじめに:
     - Chapter 1 この教材について:
       - 1-1-1 なぜ Claude Code を使うのか: part-01/chapter-01/1-1-1.md

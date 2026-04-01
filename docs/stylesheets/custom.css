@@ -1,3 +1,20 @@
+/* Claude Code テーマカラー（テラコッタ #D97757） */
+:root {
+  --md-primary-fg-color: #D97757;
+  --md-primary-fg-color--light: #E09070;
+  --md-primary-fg-color--dark: #C06040;
+  --md-accent-fg-color: #D97757;
+  --md-accent-fg-color--transparent: rgba(217, 119, 87, 0.1);
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #D97757;
+  --md-primary-fg-color--light: #E09070;
+  --md-primary-fg-color--dark: #C06040;
+  --md-accent-fg-color: #E09070;
+  --md-accent-fg-color--transparent: rgba(224, 144, 112, 0.1);
+}
+
 /* ホームページのヒーローセクション */
 .hero {
   text-align: center;
@@ -13,4 +30,57 @@
 /* フッターの "Made with Material for MkDocs" を非表示 */
 .md-copyright {
   display: none;
+}
+
+/* 見出しの視認性を改善 */
+.md-typeset h1 {
+  font-weight: 700;
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset h2 {
+  font-weight: 600;
+  color: var(--md-default-fg-color);
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  padding-bottom: 0.4rem;
+}
+
+.md-typeset h3 {
+  font-weight: 600;
+  color: var(--md-default-fg-color);
+}
+
+/* ダークモード: テキストの視認性を改善 */
+[data-md-color-scheme="slate"] .md-typeset {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+[data-md-color-scheme="slate"] .md-typeset h1,
+[data-md-color-scheme="slate"] .md-typeset h2,
+[data-md-color-scheme="slate"] .md-typeset h3 {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+[data-md-color-scheme="slate"] .md-typeset h2 {
+  border-bottom-color: rgba(255, 255, 255, 0.12);
+}
+
+[data-md-color-scheme="slate"] .md-typeset code {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* フッター前/次ナビの視認性を改善 */
+.md-footer__link {
+  padding: 1rem 1.5rem;
+  border-radius: 0.4rem;
+  transition: background-color 0.2s;
+}
+
+.md-footer__link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.md-footer__title {
+  font-size: 0.9rem;
+  font-weight: 600;
 }
