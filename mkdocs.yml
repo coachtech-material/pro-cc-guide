@@ -38,6 +38,12 @@ theme:
   icon:
     logo: material/book-open-variant
 
+extra:
+  generator: false
+
+extra_css:
+  - stylesheets/custom.css
+
 markdown_extensions:
   - admonition
   - pymdownx.details
