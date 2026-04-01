@@ -69,9 +69,17 @@
   color: rgba(255, 255, 255, 0.85);
 }
 
-/* ヘッダーロゴアイコンを非表示 */
-.md-header__button.md-logo {
+/* ヘッダーロゴアイコンを非表示（リンクは維持） */
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
   display: none;
+}
+
+.md-header__button.md-logo {
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+  width: 0;
 }
 
 /* フッター前/次ナビの視認性を改善 */
