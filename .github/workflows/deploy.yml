@@ -6,7 +6,7 @@ on:
     paths:
       - "curriculums/**"
       - "mkdocs.yml"
-      - "docs/index.md"
+      - "docs/**"
       - "scripts/build_docs.py"
       - ".github/workflows/deploy.yml"
   workflow_dispatch:
