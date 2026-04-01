@@ -1,0 +1,119 @@
+site_name: Claude Code 実践ガイド
+site_description: COACHTECH Pro生向け Claude Code 教材
+site_url: https://coachtech-material.github.io/pro-cc-guide/
+
+docs_dir: docs
+
+theme:
+  name: material
+  language: ja
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: ダークモードに切り替え
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: ライトモードに切り替え
+  font:
+    text: Noto Sans JP
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.follow
+  icon:
+    logo: material/book-open-variant
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Part 1 はじめに:
+    - Chapter 1 この教材について:
+      - 1-1-1 なぜ Claude Code を使うのか: part-01/chapter-01/1-1-1.md
+      - 1-1-2 対象読者と前提条件: part-01/chapter-01/1-1-2.md
+      - 1-1-3 教材の構成と学習の進め方: part-01/chapter-01/1-1-3.md
+    - Chapter 2 学習を始める前に:
+      - 1-2-1 AI ツールを使う前の確認事項: part-01/chapter-02/1-2-1.md
+      - 1-2-2 プランの選択と費用: part-01/chapter-02/1-2-2.md
+  - Part 2 Claude Code の基礎:
+    - Chapter 1 セットアップ:
+      - 2-1-1 インストールと認証: part-02/chapter-01/2-1-1.md
+      - 2-1-2 権限とセキュリティ: part-02/chapter-01/2-1-2.md
+      - 2-1-3 モデル選択とコスト管理: part-02/chapter-01/2-1-3.md
+      - 2-1-4 CLAUDE.md とプロジェクト作成: part-02/chapter-01/2-1-4.md
+    - Chapter 2 基本を理解する:
+      - 2-2-1 エージェントループ: part-02/chapter-02/2-2-1.md
+      - 2-2-2 コンテキストとセッション管理: part-02/chapter-02/2-2-2.md
+      - 2-2-3 プロンプト設計: part-02/chapter-02/2-2-3.md
+    - Chapter 3 機能を使いこなす:
+      - 2-3-1 Plan Mode: part-02/chapter-03/2-3-1.md
+      - 2-3-2 Skills: part-02/chapter-03/2-3-2.md
+      - 2-3-3 Hooks: part-02/chapter-03/2-3-3.md
+      - 2-3-4 MCP: part-02/chapter-03/2-3-4.md
+      - 2-3-5 Sub-agents: part-02/chapter-03/2-3-5.md
+      - 2-3-6 Plugins: part-02/chapter-03/2-3-6.md
+      - 2-3-7 Git と Worktree: part-02/chapter-03/2-3-7.md
+      - 2-3-8 GitHub Actions: part-02/chapter-03/2-3-8.md
+  - Part 3 Claude Code の実践:
+    - Chapter 1 実践の準備:
+      - 3-1-1 Claude Code で実務タスクを遂行する考え方: part-03/chapter-01/3-1-1.md
+      - 3-1-2 セットアップと動作確認: part-03/chapter-01/3-1-2.md
+      - 3-1-3 プロジェクトの規約・設定を確認する: part-03/chapter-01/3-1-3.md
+    - Chapter 2 既存コードを理解する:
+      - 3-2-1 コードリーディングの方法論: part-03/chapter-02/3-2-1.md
+      - 3-2-2 知らない技術への向き合い方: part-03/chapter-02/3-2-2.md
+      - 3-2-3 CourseHub のコードを読む: part-03/chapter-02/3-2-3.md
+    - Chapter 3 バグを修正する:
+      - 3-3-1 バグ修正の方法論: part-03/chapter-03/3-3-1.md
+      - 3-3-2 CourseHub のバグを修正する: part-03/chapter-03/3-3-2.md
+    - Chapter 4 機能を開発する:
+      - 3-4-1 機能開発の方法論: part-03/chapter-04/3-4-1.md
+      - 3-4-2 CourseHub に機能を追加する: part-03/chapter-04/3-4-2.md
+    - Chapter 5 コードを改善する:
+      - 3-5-1 リファクタリングの方法論: part-03/chapter-05/3-5-1.md
+      - 3-5-2 CourseHub のコードを改善する: part-03/chapter-05/3-5-2.md
+    - Chapter 6 チームに共有する:
+      - 3-6-1 AI 時代のチーム開発: part-03/chapter-06/3-6-1.md
+      - 3-6-2 CourseHub の変更をチームに届ける: part-03/chapter-06/3-6-2.md
+  - Part 4 継続的な学習:
+    - Chapter 1 学び続けるために:
+      - 4-1-1 学び続けるサイクル: part-04/chapter-01/4-1-1.md
+      - 4-1-2 教材の総まとめ・次のステップ: part-04/chapter-01/4-1-2.md
+      - 4-1-3 Claude Code の発展機能を知る: part-04/chapter-01/4-1-3.md

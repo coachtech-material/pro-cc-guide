@@ -1,2 +1,6 @@
 .DS_Store
 memo/
+
+# MkDocs build output
+site/
+docs/part-*/
