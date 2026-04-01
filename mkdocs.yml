@@ -36,7 +36,7 @@ theme:
     - content.code.copy
     - toc.follow
   icon:
-    logo: material/terminal
+    logo: material/console
 
 extra:
   generator: false
