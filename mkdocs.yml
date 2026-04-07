@@ -70,24 +70,30 @@ markdown_extensions:
 nav:
   - トップ: index.md
   - Part 1 はじめに:
-    - Chapter 1 この教材について:
-      - 1-1-1 なぜ Claude Code を使うのか: part-01/chapter-01/1-1-1.md
-      - 1-1-2 対象読者と前提条件: part-01/chapter-01/1-1-2.md
-      - 1-1-3 教材の構成と学習の進め方: part-01/chapter-01/1-1-3.md
-    - Chapter 2 学習を始める前に:
-      - 1-2-1 AI ツールを使う前の確認事項: part-01/chapter-02/1-2-1.md
-      - 1-2-2 プランの選択と費用: part-01/chapter-02/1-2-2.md
+    - Chapter 1 Claude Code を学ぶ理由とこの教材の地図:
+      - 1-1-0 Chapter 1-1 の地図: part-01/chapter-01/1-1-0.md
+      - 1-1-1 Claude Code とは何か・教材の地図: part-01/chapter-01/1-1-1.md
+      - 1-1-2 AI との協働に求められる思考力: part-01/chapter-01/1-1-2.md
+      - 1-1-3 この教材で養う3つの能力: part-01/chapter-01/1-1-3.md
+      - 1-1-4 対象読者と前提知識: part-01/chapter-01/1-1-4.md
+    - Chapter 2 プラン契約と AI 利用ポリシー:
+      - 1-2-0 Chapter 1-2 の地図: part-01/chapter-02/1-2-0.md
+      - 1-2-1 プランの選択と費用: part-01/chapter-02/1-2-1.md
+      - 1-2-2 AI 利用ポリシーとデータ取り扱いの確認: part-01/chapter-02/1-2-2.md
   - Part 2 Claude Code の基礎:
     - Chapter 1 セットアップ:
+      - 2-1-0 Chapter 2-1 の地図: part-02/chapter-01/2-1-0.md
       - 2-1-1 インストールと認証: part-02/chapter-01/2-1-1.md
       - 2-1-2 権限とセキュリティ: part-02/chapter-01/2-1-2.md
       - 2-1-3 モデル選択とコスト管理: part-02/chapter-01/2-1-3.md
       - 2-1-4 CLAUDE.md とプロジェクト作成: part-02/chapter-01/2-1-4.md
     - Chapter 2 基本を理解する:
+      - 2-2-0 Chapter 2-2 の地図: part-02/chapter-02/2-2-0.md
       - 2-2-1 エージェントループ: part-02/chapter-02/2-2-1.md
       - 2-2-2 コンテキストとセッション管理: part-02/chapter-02/2-2-2.md
       - 2-2-3 プロンプト設計: part-02/chapter-02/2-2-3.md
     - Chapter 3 機能を使いこなす:
+      - 2-3-0 Chapter 2-3 の地図: part-02/chapter-03/2-3-0.md
       - 2-3-1 Plan Mode: part-02/chapter-03/2-3-1.md
       - 2-3-2 Skills: part-02/chapter-03/2-3-2.md
       - 2-3-3 Hooks: part-02/chapter-03/2-3-3.md
@@ -98,27 +104,34 @@ nav:
       - 2-3-8 GitHub Actions: part-02/chapter-03/2-3-8.md
   - Part 3 Claude Code の実践:
     - Chapter 1 実践の準備:
+      - 3-1-0 Chapter 3-1 の地図: part-03/chapter-01/3-1-0.md
       - 3-1-1 Claude Code で実務タスクを遂行する考え方: part-03/chapter-01/3-1-1.md
       - 3-1-2 セットアップと動作確認: part-03/chapter-01/3-1-2.md
       - 3-1-3 プロジェクトの規約・設定を確認する: part-03/chapter-01/3-1-3.md
     - Chapter 2 既存コードを理解する:
+      - 3-2-0 Chapter 3-2 の地図: part-03/chapter-02/3-2-0.md
       - 3-2-1 コードリーディングの方法論: part-03/chapter-02/3-2-1.md
       - 3-2-2 知らない技術への向き合い方: part-03/chapter-02/3-2-2.md
       - 3-2-3 CourseHub のコードを読む: part-03/chapter-02/3-2-3.md
     - Chapter 3 バグを修正する:
+      - 3-3-0 Chapter 3-3 の地図: part-03/chapter-03/3-3-0.md
       - 3-3-1 バグ修正の方法論: part-03/chapter-03/3-3-1.md
       - 3-3-2 CourseHub のバグを修正する: part-03/chapter-03/3-3-2.md
     - Chapter 4 機能を開発する:
+      - 3-4-0 Chapter 3-4 の地図: part-03/chapter-04/3-4-0.md
       - 3-4-1 機能開発の方法論: part-03/chapter-04/3-4-1.md
       - 3-4-2 CourseHub に機能を追加する: part-03/chapter-04/3-4-2.md
     - Chapter 5 コードを改善する:
+      - 3-5-0 Chapter 3-5 の地図: part-03/chapter-05/3-5-0.md
       - 3-5-1 リファクタリングの方法論: part-03/chapter-05/3-5-1.md
       - 3-5-2 CourseHub のコードを改善する: part-03/chapter-05/3-5-2.md
     - Chapter 6 チームに共有する:
+      - 3-6-0 Chapter 3-6 の地図: part-03/chapter-06/3-6-0.md
       - 3-6-1 AI 時代のチーム開発: part-03/chapter-06/3-6-1.md
       - 3-6-2 CourseHub の変更をチームに届ける: part-03/chapter-06/3-6-2.md
   - Part 4 継続的な学習:
     - Chapter 1 学び続けるために:
+      - 4-1-0 Chapter 4-1 の地図: part-04/chapter-01/4-1-0.md
       - 4-1-1 学び続けるサイクル: part-04/chapter-01/4-1-1.md
       - 4-1-2 教材の総まとめ・次のステップ: part-04/chapter-01/4-1-2.md
       - 4-1-3 Claude Code の発展機能を知る: part-04/chapter-01/4-1-3.md
