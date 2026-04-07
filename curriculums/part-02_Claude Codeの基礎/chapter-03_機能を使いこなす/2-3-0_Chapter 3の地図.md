@@ -2,16 +2,55 @@
 
 > Claude Code の真価は、個々の機能を組み合わせて実務タスクを遂行できる点にあります。この Chapter では、Claude Code の主要機能を1つずつ学び、それぞれの「なぜ必要か」「何ができるか」「どう使うか」を理解します。各セクションで概念を学んだら、cc-practice で実際に手を動かし、機能を一通り使い切ります。
 
-| セクション | 学び方 | 内容 |
-|---|---|---|
-| 2-3-1 | 📖🏃 読んで手を動かす | Plan Mode で計画と実装を分離する意義と使い方を理解する |
-| 2-3-2 | 📖🏃 読んで手を動かす | Skills で再利用可能なカスタムコマンドを作成する |
-| 2-3-3 | 📖🏃 読んで手を動かす | Hooks でツール実行に連動する自動処理を設定する |
-| 2-3-4 | 📖🏃 読んで手を動かす | MCP で外部ツール・サービスに接続して能力を拡張する |
-| 2-3-5 | 📖🏃 読んで手を動かす | Sub-agents でコンテキストを分離して探索や検証を委譲する |
-| 2-3-6 | 📖🏃 読んで手を動かす | Plugins で拡張機能をパッケージ化して共有する |
-| 2-3-7 | 📖🏃 読んで手を動かす | Git 連携と Worktree で変更管理と並列開発を行う |
-| 2-3-8 | 📖🏃 読んで手を動かす | GitHub Actions で CI/CD に統合してワークフローを自動化する |
+## セクション一覧
+
+### 2-3-1 Plan Mode ｜ 📖🏃 読んで手を動かす
+
+- 計画と実装を分離する意義と Plan Mode の読み取り専用モード
+- Shift+Tab での切り替えと、調査 → 計画 → 実装の流れ
+- 効果が高い場面（複数ファイル変更・設計選択肢検討・大規模リファクタ・初見コードベース）
+
+### 2-3-2 Skills ｜ 📖🏃 読んで手を動かす
+
+- `SKILL.md` の構造（frontmatter と本文）
+- 配置場所によるスコープ（プロジェクト用 `.claude/skills/` とユーザー全体 `~/.claude/skills/`）
+- `$ARGUMENTS` での引数受け取りと、`` !`<command>` `` での動的コンテキスト注入
+
+### 2-3-3 Hooks ｜ 📖🏃 読んで手を動かす
+
+- ライフサイクルイベント（PreToolUse・PostToolUse・Stop など）の使い分け
+- `settings.json` での type・command・matcher の定義方法
+- 終了コード 0／2 によるブロック制御と、よくある失敗パターン
+
+### 2-3-4 MCP ｜ 📖🏃 読んで手を動かす
+
+- MCP の役割（ツール提供・リソース提供）と接続タイプ（stdio / http）
+- `claude mcp add` コマンドと `.mcp.json` での設定共有
+- 公開 MCP サーバー（Playwright・GitHub・Sentry・Slack・Figma）の使いどころ
+
+### 2-3-5 Sub-agents ｜ 📖🏃 読んで手を動かす
+
+- ビルトイン Sub-agents（Explore / Plan / General-purpose）の使い分け
+- カスタム Sub-agent の定義（`.claude/agents/<name>.md` の frontmatter と本文）
+- `mcpServers` でのスコープ限定と `maxTurns` での暴走防止
+
+### 2-3-6 Plugins ｜ 📖🏃 読んで手を動かす
+
+- `plugin.json` マニフェストと配下のフォルダ構造
+- 公式マーケットプレイス（claude-plugins-official）からの `/plugin install`
+- ローカル作成 Plugin のテストと `/reload-plugins` での再読み込み
+
+### 2-3-7 Git と Worktree ｜ 📖🏃 読んで手を動かす
+
+- 自然言語での Git 操作と GitHub CLI（`gh`）連携
+- チェックポイントと `Esc+Esc` / `/rewind` での巻き戻し
+- `claude --worktree <name>` による独立作業ディレクトリで並列開発
+
+### 2-3-8 GitHub Actions ｜ 📖🏃 読んで手を動かす
+
+- `claude-code-action` と Anthropic API（従量課金）の関係
+- `.github/workflows/claude.yml` の構造（イベントトリガー・permissions・with パラメータ）
+- `--max-turns` でのコスト管理と GitHub Secrets での API キー安全管理
 
 ## 📖 この Chapter の進め方
 
