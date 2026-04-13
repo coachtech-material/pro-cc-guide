@@ -186,9 +186,9 @@ Part 3 では、Part 2 で学んだ機能をタスクの中で実践的に活用
 |---|---|
 | 3-1 実践の準備 | CLAUDE.md / rules / skills / settings.json |
 | 3-2 コードを理解する | Sub-agents, MCP, `/compact`, `/context`, `/btw` |
-| 3-3 バグを修正する | プロンプト設計, テスト, `/rewind`, `/test` |
-| 3-4 機能を開発する | Plan Mode, セッション管理, Hooks, `/simplify`, `/test` |
-| 3-5 コードを改善する | Worktree, Plan Mode, `/test`, `/cost`, `/context` |
+| 3-3 バグを修正する | プロンプト設計, テスト, `/rewind` |
+| 3-4 機能を開発する | Plan Mode, セッション管理, Hooks, `/simplify` |
+| 3-5 コードを改善する | Worktree, Plan Mode, `/cost`, `/context` |
 | 3-6 チームに共有する | Git, PR・レビュー, GitHub Actions, Skills, 権限管理 |
 
 Part 2 で学んだ機能が、実務タスクの中でどう活きるかを体感してください。

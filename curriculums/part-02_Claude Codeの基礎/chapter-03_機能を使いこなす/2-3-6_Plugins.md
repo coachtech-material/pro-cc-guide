@@ -87,12 +87,12 @@ Claude Code には **公式マーケットプレイス**（`claude-plugins-offic
 
 | カテゴリ | Plugin 例 | 説明 |
 |---|---|---|
-| **コードインテリジェンス** | `typescript`、`php`、`python`、`go` | LSP による型チェック、定義ジャンプ、参照検索 |
+| **コードインテリジェンス** | `typescript-lsp`、`php-lsp`、`pyright-lsp`、`gopls-lsp` | LSP による型チェック、定義ジャンプ、参照検索 |
 | **外部連携** | `github`、`slack`、`sentry` | 外部サービスとの連携 |
 | **開発ワークフロー** | `pr-review-toolkit`、`commit-commands` | PR レビューやコミット操作の効率化 |
 | **出力スタイル** | `learning-output-style` | Claude Code の出力形式のカスタマイズ |
 
-> 💡 Pro生 が Laravel で開発する場合、`php` Plugin（PHP の LSP による型チェック）は特に有用です。
+> 💡 Pro生 が Laravel で開発する場合、`php-lsp` Plugin（PHP の LSP による型チェック）は特に有用です。
 
 ### Plugin の管理コマンド
 
