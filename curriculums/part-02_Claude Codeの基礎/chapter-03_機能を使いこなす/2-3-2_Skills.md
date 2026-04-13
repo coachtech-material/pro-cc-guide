@@ -192,7 +192,7 @@ Claude Code が `.claude/skills/explain/SKILL.md` を作成します。
 
 ### Step 2: Skill を使ってみる
 
-作成した Skill を、2-3-1 で作成した DailyReportController に対して使ってみましょう。
+作成した Skill を、[2-3-1 Plan Mode](2-3-1_Plan%20Mode.md) で作成した DailyReportController に対して使ってみましょう。
 
 ```
 /explain app/Http/Controllers/DailyReportController.php
