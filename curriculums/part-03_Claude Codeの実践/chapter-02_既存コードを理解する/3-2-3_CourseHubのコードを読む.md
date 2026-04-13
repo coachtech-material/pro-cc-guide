@@ -61,18 +61,21 @@ app/
 
 **モデルのリレーション（主要なもの）:**
 
-```
-User ─── hasMany ──→ Course（coach として作成）
-  │                     │
-  │                     ├── hasMany ──→ Chapter ──→ hasMany ──→ Lesson
-  │                     │                                         │
-  │                     ├── hasMany ──→ Enrollment                ├── hasOne ──→ Quiz
-  │                     │                                         │               │
-  │                     └── belongsToMany ──→ Tag                 │           hasMany → Question
-  │                                                               │                       │
-  ├── hasMany ──→ Enrollment                                      │                   hasMany → Option
-  ├── hasMany ──→ LessonProgress ←── belongsTo ─── Lesson ←──────┘
-  └── hasMany ──→ Submission ←── belongsTo ─── Quiz
+```mermaid
+erDiagram
+    User ||--o{ Course : "hasMany（coach として作成）"
+    User ||--o{ Enrollment : hasMany
+    User ||--o{ LessonProgress : hasMany
+    User ||--o{ Submission : hasMany
+    Course ||--o{ Chapter : hasMany
+    Course ||--o{ Enrollment : hasMany
+    Course }o--o{ Tag : belongsToMany
+    Chapter ||--o{ Lesson : hasMany
+    Lesson ||--o{ LessonProgress : hasMany
+    Lesson ||--o| Quiz : hasOne
+    Quiz ||--o{ Question : hasMany
+    Question ||--o{ Option : hasMany
+    Quiz ||--o{ Submission : hasMany
 ```
 
 **ルーティングの概要:**
@@ -403,24 +406,21 @@ private function checkCourseCompletion(Course $course): void
 
 全公開レッスンの完了数が総数以上になると、`CourseCompleted` Event が発火します。この Event を `UpdateEnrollmentStatus` Listener が受け取り、Enrollment のステータスを `completed` に更新します。
 
-```
-受講生が「完了」ボタンを押す
-    ↓
-LessonController@complete
-    ↓
-LessonProgress を completed に更新
-    ↓
-checkCourseCompletion() を呼び出し
-    ↓
-全公開レッスンが完了済みか？ ── No → 何もしない
-    │
-   Yes
-    ↓
-CourseCompleted Event を発火
-    ↓
-UpdateEnrollmentStatus Listener が処理
-    ↓
-Enrollment を completed に更新、completed_at を記録
+```mermaid
+flowchart TD
+    A["受講生が「完了」ボタンを押す"]
+    B["LessonController@complete"]
+    C["LessonProgress を completed に更新"]
+    D["checkCourseCompletion() を呼び出し"]
+    Q{"全公開レッスンが完了済みか？"}
+    E["何もしない"]
+    F["CourseCompleted Event を発火"]
+    G["UpdateEnrollmentStatus Listener が処理"]
+    H["Enrollment を completed に更新<br>completed_at を記録"]
+
+    A --> B --> C --> D --> Q
+    Q -->|No| E
+    Q -->|Yes| F --> G --> H
 ```
 
 3-2-1 で説明した「Claude の説明を検証する: パターン 1 省略」を実践する場面です。Claude が `checkCourseCompletion()` の存在を省略していなかったか、Event の発火条件を正確に説明していたかを確認してください。

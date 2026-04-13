@@ -122,17 +122,14 @@ Plugin のインストール先によって、適用範囲が変わります。
 
 ### 作成の流れ
 
-```
-① /plugin コマンドで雛形を作成
-       │
-       ▼
-② Skills、Hooks、Sub-agents を追加
-       │
-       ▼
-③ ローカルでテスト（--plugin-dir フラグ）
-       │
-       ▼
-④ Git リポジトリとして公開（任意）
+```mermaid
+flowchart TD
+    A["① /plugin コマンドで雛形を作成"]
+    B["② Skills、Hooks、Sub-agents を追加"]
+    C["③ ローカルでテスト<br>（--plugin-dir フラグ）"]
+    D["④ Git リポジトリとして公開（任意）"]
+
+    A --> B --> C --> D
 ```
 
 Claude Code 内で `/plugin` と入力すると、対話的に Plugin の雛形を作成できます。
