@@ -11,7 +11,7 @@
 
 - **1-1-0 Chapter 1 の地図**（Chapter 地図 / 学習者向けの導入ページ）
 
-- **1-1-1 Claude Code とは何か・教材の地図**
+- **1-1-1 Claude Code とは何か**
   - 種類: 概念
   - ゴール: 開発現場の変化と Claude Code の特徴を理解し、教材の全体構成（4 Part / 3層構造）を最初に把握する
   - 公式ドキュメント: [Overview](https://code.claude.com/docs/en/overview), [Features Overview](https://code.claude.com/docs/en/features-overview)
