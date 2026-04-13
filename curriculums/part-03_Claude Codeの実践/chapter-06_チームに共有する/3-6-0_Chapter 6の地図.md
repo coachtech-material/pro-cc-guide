@@ -11,4 +11,4 @@
 
 ## 📖 この Chapter の進め方
 
-3-6-1 で AI 生成コードをチームに共有する際の考え方を学び、3-6-2 で CourseHub の変更を実際にチームに届ける実践を行います。Part 2 で学んだ Git 操作（[2-3-7](../../part-02_Claude%20Codeの基礎/chapter-03_機能を使いこなす/2-3-7_GitとWorktree.md)）と GitHub Actions（[2-3-8](../../part-02_Claude%20Codeの基礎/chapter-03_機能を使いこなす/2-3-8_GitHub%20Actions.md)）の知識を実務コンテキストで総動員します。
+[3-6-1 AI時代のチーム開発](3-6-1_AI時代のチーム開発.md) で AI 生成コードをチームに共有する際の考え方を学び、[3-6-2 CourseHubの変更をチームに届ける](3-6-2_CourseHubの変更をチームに届ける.md) で CourseHub の変更を実際にチームに届ける実践を行います。Part 2 で学んだ Git 操作（[2-3-7](../../part-02_Claude%20Codeの基礎/chapter-03_機能を使いこなす/2-3-7_GitとWorktree.md)）と GitHub Actions（[2-3-8](../../part-02_Claude%20Codeの基礎/chapter-03_機能を使いこなす/2-3-8_GitHub%20Actions.md)）の知識を実務コンテキストで総動員します。
