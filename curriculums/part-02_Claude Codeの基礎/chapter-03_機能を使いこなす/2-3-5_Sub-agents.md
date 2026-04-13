@@ -96,11 +96,11 @@ Explore とは異なり、ファイルの編集やコマンドの実行もでき
 
 上記3つの他に、以下の Sub-agent も組み込まれています。これらは Claude Code が内部的に自動で使用するもので、あなたが直接指定することはほとんどありません。
 
-| Sub-agent | モデル | 用途 |
-|---|---|---|
-| **Bash** | メインセッションと同じ | シェルコマンドの実行を独立したコンテキストで行う |
-| **statusline-setup** | Sonnet | ステータスラインの設定を行う |
-| **Claude Code Guide** | Haiku | Claude Code 自体の使い方を案内する |
+| Sub-agent | モデル | ツール | 用途 |
+|---|---|---|---|
+| **Bash** | メインセッションと同じ | Bash のみ | シェルコマンドの実行を独立したコンテキストで行う |
+| **statusline-setup** | Sonnet | Bash | ステータスラインの設定を行う |
+| **Claude Code Guide** | Haiku | Read | Claude Code 自体の使い方を案内する |
 
 ## カスタム Sub-agent を作る
 
