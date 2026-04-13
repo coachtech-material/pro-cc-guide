@@ -220,7 +220,7 @@ cc-practice で Claude Code を起動し、以下のように指示します。
 ```
 > .claude/settings.local.json に以下の内容を書いて:
 > Claude Code の作業が完了したらデスクトップ通知を送る Stop Hook を設定したい。
-> お使いの OS に合わせてデスクトップ通知を送る設定にして。macOS なら osascript、Linux なら notify-send を使って「Claude Code の作業が完了しました」という通知を出すようにして
+> 使用している OS に合わせてデスクトップ通知を送る設定にして。macOS なら osascript、Linux なら notify-send を使って「Claude Code の作業が完了しました」という通知を出すようにして
 ```
 
 > 📝 `settings.local.json`（ローカル設定）に書くのは、通知の設定が個人の環境に依存するためです。macOS と Linux ではコマンドが異なるため、チーム共有する `settings.json` ではなくローカル設定に書きます。
