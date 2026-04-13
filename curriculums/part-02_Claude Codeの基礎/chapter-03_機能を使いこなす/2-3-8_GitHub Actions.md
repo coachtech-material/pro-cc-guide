@@ -244,7 +244,7 @@ Claude Code が `gh repo create` と `git push` を実行します。
 >
 > **原因**: GitHub CLI がインストールされていません。
 >
-> **対処法**: 前のセクション（2-3-7）の「GitHub CLI（gh）との連携」の手順に沿って、インストールと認証を行ってください。
+> **対処法**: 前のセクション（2-3-7 GitとWorktree）の「GitHub CLI（gh）との連携」の手順に沿って、インストールと認証を行ってください。
 
 ### Step 2: API キーを Secrets に登録する
 
