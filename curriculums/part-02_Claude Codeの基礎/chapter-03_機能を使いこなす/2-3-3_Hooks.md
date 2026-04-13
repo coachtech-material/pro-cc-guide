@@ -130,8 +130,10 @@ FILE=$(jq -r '.tool_input.file_path // empty') && [ -n "$FILE" ] && npx prettier
 | 終了コード | 意味 |
 |---|---|
 | **0** | 正常終了。処理を続行する |
-| **2** | ブロック。ツールの実行を阻止する（PreToolUse の場合） |
-| その他 | エラー。ただしブロックはしない |
+| **2** | ブロック。`PreToolUse` ではツール実行を阻止し、`UserPromptSubmit` ではプロンプトを破棄、`Stop` では Claude の停止を防止する |
+| その他 | 非ブロッキングエラー。処理は続行される（stderr は Verbose モードで表示） |
+
+> ⚠️ 終了コード 2 がブロックとして機能するのは `PreToolUse` / `UserPromptSubmit` / `Stop` / `SubagentStop` / `PermissionRequest` などのイベントに限られます。`PostToolUse` のように「ツール実行後」に発火するイベントでは、すでに実行が済んでいるため exit 2 を返してもブロックはできず、stderr の内容が Claude にフィードバックとして伝わるだけです。イベントごとの挙動は公式ドキュメント [Hooks](https://code.claude.com/docs/en/hooks) を確認してください。
 
 たとえば、`.env` ファイルの編集をブロックする PreToolUse Hook は以下のように書きます。
 
