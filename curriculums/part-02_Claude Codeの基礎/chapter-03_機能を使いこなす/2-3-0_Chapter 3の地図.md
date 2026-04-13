@@ -4,57 +4,20 @@
 
 ## セクション一覧
 
-### 2-3-1 Plan Mode ｜ 📖🏃 読んで手を動かす
-
-- 計画と実装を分離する意義と Plan Mode の読み取り専用モード
-- Shift+Tab での切り替えと、調査 → 計画 → 実装の流れ
-- 効果が高い場面（複数ファイル変更・設計選択肢検討・大規模リファクタ・初見コードベース）
-
-### 2-3-2 Skills ｜ 📖🏃 読んで手を動かす
-
-- `SKILL.md` の構造（frontmatter と本文）
-- 配置場所によるスコープ（プロジェクト用 `.claude/skills/` とユーザー全体 `~/.claude/skills/`）
-- `$ARGUMENTS` での引数受け取りと、`` !`<command>` `` での動的コンテキスト注入
-
-### 2-3-3 Hooks ｜ 📖🏃 読んで手を動かす
-
-- ライフサイクルイベント（PreToolUse・PostToolUse・Stop など）の使い分け
-- `settings.json` での type・command・matcher の定義方法
-- 終了コード 0／2 によるブロック制御と、よくある失敗パターン
-
-### 2-3-4 MCP ｜ 📖🏃 読んで手を動かす
-
-- MCP の役割（ツール提供・リソース提供）と接続タイプ（stdio / http）
-- `claude mcp add` コマンドと `.mcp.json` での設定共有
-- 公開 MCP サーバー（Playwright・GitHub・Sentry・Slack・Figma）の使いどころ
-
-### 2-3-5 Sub-agents ｜ 📖🏃 読んで手を動かす
-
-- ビルトイン Sub-agents（Explore / Plan / General-purpose）の使い分け
-- カスタム Sub-agent の定義（`.claude/agents/<name>.md` の frontmatter と本文）
-- `mcpServers` でのスコープ限定と `maxTurns` での暴走防止
-
-### 2-3-6 Plugins ｜ 📖🏃 読んで手を動かす
-
-- `plugin.json` マニフェストと配下のフォルダ構造
-- 公式マーケットプレイス（claude-plugins-official）からの `/plugin install`
-- ローカル作成 Plugin のテストと `/reload-plugins` での再読み込み
-
-### 2-3-7 Git と Worktree ｜ 📖🏃 読んで手を動かす
-
-- 自然言語での Git 操作と GitHub CLI（`gh`）連携
-- チェックポイントと `Esc+Esc` / `/rewind` での巻き戻し
-- `claude --worktree <name>` による独立作業ディレクトリで並列開発
-
-### 2-3-8 GitHub Actions ｜ 📖🏃 読んで手を動かす
-
-- `claude-code-action` と Anthropic API（従量課金）の関係
-- `.github/workflows/claude.yml` の構造（イベントトリガー・permissions・with パラメータ）
-- `--max-turns` でのコスト管理と GitHub Secrets での API キー安全管理
+| # | セクション | 学び方 | 概要 |
+|---|---|---|---|
+| 2-3-1 | Plan Mode | 🏃 実践 | 計画と実装を分離する意義、Shift+Tab での切り替え、効果が高い場面 |
+| 2-3-2 | Skills | 🏃 実践 | `SKILL.md` の構造、配置場所によるスコープ、`$ARGUMENTS` と動的コンテキスト注入 |
+| 2-3-3 | Hooks | 🏃 実践 | ライフサイクルイベントの使い分け、`settings.json` での定義、終了コードによるブロック制御 |
+| 2-3-4 | MCP | 🏃 実践 | MCP の役割と接続タイプ、`claude mcp add` と `.mcp.json`、公開 MCP サーバーの使いどころ |
+| 2-3-5 | Sub-agents | 🏃 実践 | ビルトイン Sub-agents、カスタム Sub-agent の定義、`mcpServers` と `maxTurns` |
+| 2-3-6 | Plugins | 🏃 実践 | `plugin.json` マニフェスト、公式マーケットプレイスからの `/plugin install`、ローカル作成と再読み込み |
+| 2-3-7 | Git と Worktree | 🏃 実践 | 自然言語での Git 操作、チェックポイントと `/rewind`、Worktree による並列開発 |
+| 2-3-8 | GitHub Actions | 🏃 実践 | `claude-code-action` と Anthropic API、`.github/workflows/claude.yml`、Secrets での API キー管理 |
 
 ## 📖 この Chapter の進め方
 
-8つのセクションすべてが 📖🏃 読んで手を動かす構成です。各セクションで機能の概念を学び、すぐに cc-practice で実践します。Part 3 に入る前の唯一の機能実践なので、各実践では機能を「小さいけど一通り使い切る」レベルで体験します。
+8つのセクションすべてが実践型です。各セクションで機能の概念を学び、すぐに cc-practice で実践します。Part 3 に入る前の唯一の機能実践なので、各実践では機能を「小さいけど一通り使い切る」レベルで体験します。
 
 ### 実践は2つの軸で進む
 
