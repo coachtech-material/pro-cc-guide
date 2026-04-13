@@ -75,7 +75,7 @@ Plan Mode への切り替え方法は2つあります。
 
 ### 方法1: Shift + Tab で切り替える
 
-Claude Code の入力欄で `Shift + Tab` を押すと、モードが切り替わります。画面上部のインジケーターが「Plan」に変わるので、現在のモードが視覚的にわかります。`Shift + Tab` を押すたびに Default → Accept Edits → Plan → Default の順でサイクルするため、Plan Mode から Default に戻るにはもう一度 `Shift + Tab` を押します。
+Claude Code の入力欄で `Shift + Tab` を押すと、モードが切り替わります。画面上部のインジケーターが「Plan」に変わるので、現在のモードが視覚的にわかります。`Shift + Tab` を押すたびにパーミッションモードが順に切り替わります。Plan Mode から Default に戻るにはもう一度 `Shift + Tab` を押します。
 
 ### 方法2: プロンプトで指示する
 
@@ -130,7 +130,7 @@ claude
 
 ### Step 2: Plan Mode に切り替える
 
-入力欄で `Shift + Tab` を何度か押して、画面上部に「Plan」と表示されるまで切り替えてください。`Shift + Tab` を押すたびに Default → Accept Edits → Plan の順でサイクルします。
+入力欄で `Shift + Tab` を何度か押して、画面上部に「Plan」と表示されるまで切り替えてください。`Shift + Tab` を押すたびにパーミッションモードが順に切り替わります。
 
 ### Step 3: 計画を立てる
 
