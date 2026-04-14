@@ -125,8 +125,8 @@ flowchart LR
 Claude Code の主要機能を習得するパートです。3つの Chapter で構成されています。
 
 - **Chapter 2-1**: セットアップ。インストールと認証を行い、権限やモデル選択、CLAUDE.md の設定まで、自分のプロジェクトで手を動かしながら基盤を整えます
-- **Chapter 2-2**: Claude Code の仕組みと基本概念を学びます。エージェントループ、コンテキスト管理、プロンプト設計など、使いこなすための土台を固めながら、cc-practice（Part 2 で作成する学習用の Laravel Sail プロジェクト）で実際に体験します
-- **Chapter 2-3**: cc-practice で Claude Code の各機能（Plan Mode、Skills、Hooks、MCP など）を実践的に体験します
+- **Chapter 2-2**: 基本を理解する。Claude Code の仕組みと基本概念を学びます。エージェントループ、コンテキスト管理、プロンプト設計など、使いこなすための土台を固めながら、cc-practice（Part 2 で作成する学習用の Laravel Sail プロジェクト）で実際に体験します
+- **Chapter 2-3**: 機能を使いこなす。cc-practice で Claude Code の各機能（Plan Mode、Skills、Hooks、MCP など）を実践的に体験します
 
 ### Part 3: Claude Code の実践
 
