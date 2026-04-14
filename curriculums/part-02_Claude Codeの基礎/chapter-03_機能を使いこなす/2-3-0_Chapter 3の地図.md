@@ -58,4 +58,4 @@
 
 実践は2つの軸で進みます。**日報管理機能の開発**（Plan Mode で画面を設計、Git で変更を管理、Blade でページを改善）と、**Claude Code 自体のカスタマイズ**（Skills、Hooks、MCP、Sub-agents、Plugins、GitHub Actions の設定）です。どちらの成果物も cc-practice に蓄積されていくので、上から順に進めてください。
 
-> 📝 この Chapter の各機能は、すべて必須ではありません。 Claude Code は Chapter 2-1〜2-2 で学んだ基本操作だけでも十分に活用できます。この Chapter で紹介する機能（Plan Mode、Skills、Hooks、MCP、Sub-agents、Plugins、Git 連携、GitHub Actions）は、Claude Code をさらに効率的に使いこなすための**任意の拡張機能** です。すべてを一度に覚える必要はなく、実務で必要になったときに該当するセクションに戻って活用してください。
+> 📝 この Chapter の各機能は、すべて必須ではありません。 Claude Code は [Chapter 2-1「セットアップ」](../chapter-01_セットアップ/2-1-0_Chapter%201の地図.md)〜[Chapter 2-2「基本を理解する」](../chapter-02_基本を理解する/2-2-0_Chapter%202の地図.md) で学んだ基本操作だけでも十分に活用できます。この Chapter で紹介する機能（Plan Mode、Skills、Hooks、MCP、Sub-agents、Plugins、Git 連携、GitHub Actions）は、Claude Code をさらに効率的に使いこなすための**任意の拡張機能** です。すべてを一度に覚える必要はなく、実務で必要になったときに該当するセクションに戻って活用してください。

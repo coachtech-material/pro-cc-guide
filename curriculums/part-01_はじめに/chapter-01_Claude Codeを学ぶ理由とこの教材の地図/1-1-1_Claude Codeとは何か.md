@@ -115,9 +115,9 @@ Part 1          Part 2              Part 3            Part 4
 
 Claude Code の主要機能を習得するパートです。3つの Chapter で構成されています。
 
-- **Chapter 2-1**: セットアップ。インストールと認証を行い、権限やモデル選択、CLAUDE.md の設定まで、自分のプロジェクトで手を動かしながら基盤を整えます
-- **Chapter 2-2**: Claude Code の仕組みと基本概念を学びます。エージェントループ、コンテキスト管理、プロンプト設計など、使いこなすための土台を固めながら、cc-practice（Part 2 で作成する学習用の Laravel Sail プロジェクト）で実際に体験します
-- **Chapter 2-3**: cc-practice で Claude Code の各機能（Plan Mode、Skills、Hooks、MCP など）を実践的に体験します
+- [**Chapter 2-1「セットアップ」**](../../part-02_Claude%20Codeの基礎/chapter-01_セットアップ/2-1-0_Chapter%201の地図.md): インストールと認証を行い、権限やモデル選択、CLAUDE.md の設定まで、自分のプロジェクトで手を動かしながら基盤を整えます
+- [**Chapter 2-2「基本を理解する」**](../../part-02_Claude%20Codeの基礎/chapter-02_基本を理解する/2-2-0_Chapter%202の地図.md): Claude Code の仕組みと基本概念を学びます。エージェントループ、コンテキスト管理、プロンプト設計など、使いこなすための土台を固めながら、cc-practice（Part 2 で作成する学習用の Laravel Sail プロジェクト）で実際に体験します
+- [**Chapter 2-3「機能を使いこなす」**](../../part-02_Claude%20Codeの基礎/chapter-03_機能を使いこなす/2-3-0_Chapter%203の地図.md): cc-practice で Claude Code の各機能（Plan Mode、Skills、Hooks、MCP など）を実践的に体験します
 
 ### Part 3: Claude Code の実践
 

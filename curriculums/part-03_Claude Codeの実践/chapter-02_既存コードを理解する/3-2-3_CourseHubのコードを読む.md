@@ -497,7 +497,7 @@ Claude の説明を踏まえて、CourseHub で `EnrollmentService` が使われ
 - CourseHub では `EnrollmentService` のみ使われている
 - Controller からコンストラクタインジェクションで受け取り、メソッドを呼び出す
 
-Service クラスの設計原則（単一責任の原則、インターフェースの分離など）を今深掘りする必要はありません。Chapter 3-5（リファクタリング）で Fat Controller を改善するときに、必要に応じて深掘りします。
+Service クラスの設計原則（単一責任の原則、インターフェースの分離など）を今深掘りする必要はありません。[Chapter 3-5「コードを改善する」](../chapter-05_コードを改善する/3-5-0_Chapter%205の地図.md) で Fat Controller を改善するときに、必要に応じて深掘りします。
 
 #### 説明できるか確認する
 
