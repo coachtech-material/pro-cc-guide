@@ -61,6 +61,7 @@ CLAUDE.md は教材の哲学（WHO / WHY / WHAT / HOW）を定義し、`outline/
 | `/review` | 教材のレビュー（Part / Chapter / Section 単位。品質・整合性チェック） |
 | `/outline` | outline の作成・更新・検証（再構成・MECE 検証・公式ドキュメント照合） |
 | `/check-updates` | 公式ドキュメントとの鮮度チェック |
+| `/illustrate` | Gemini Pro による概念図の生成・挿入 |
 
 ### フォルダ構造・命名規則
 
