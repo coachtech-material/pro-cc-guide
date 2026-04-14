@@ -14,7 +14,7 @@
 ### 3-5-2 CourseHub のコードを改善する ｜ 📖🏃 読んで手を動かす
 
 - Fat Controller の責務分離: `CoachCourseController@store` を `StoreCourseRequest` 抽出 + private メソッド分割
-- N+1 クエリの解消: `with()` / `withCount()` の Eager Loading と Worktree での並列改善
+- N+1 クエリの解消: `with()` / `withCount()` の Eager Loading でクエリを最適化
 - Service クラス導入提案を見送る判断（現問題の必要十分性を超える場合）
 
 ## 📖 この Chapter の進め方
