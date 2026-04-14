@@ -238,7 +238,7 @@ Claude Code に直接聞く方法もあります。
 
 Skill のファイルが cc-practice に残っていることを確認しましょう。この Skill は今後の学習でも使えます。
 
-> 💡 **Skill 作成を支援するプラグインもあります**: Anthropic が公開している `skill-creator` プラグインを導入すると、`/skill-creator:skill-creator` で Skill の新規作成・改善・評価を対話的に進められます。本教材ではまず SKILL.md を手書きする基本の流れを押さえますが、Skill を本格的に使い込む段階ではこのプラグインを試してみると効率が上がります。プラグインの導入方法は 2-3-6 で扱います。
+> 💡 **Skill 作成を支援するプラグインもあります**: Anthropic が公開している `skill-creator` プラグインを導入すると、`/skill-creator:skill-creator` で Skill の新規作成・改善・評価を対話的に進められます。本教材ではまず SKILL.md を手書きする基本の流れを押さえますが、Skill を本格的に使い込む段階ではこのプラグインを試してみると効率が上がります。プラグインの導入方法は 2-3-6 Plugins で扱います。
 
 ---
 
