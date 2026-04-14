@@ -63,10 +63,17 @@ def rewrite_links(content: str) -> str:
             else:
                 new_segments.append(seg)
 
-        return prefix + "/".join(new_segments) + suffix
+        new_path = "/".join(new_segments)
+
+        # curriculums/ は repo root から3階層（curriculums/part/chapter）だが
+        # docs/ は docs root から2階層（part/chapter）なので ../../../ を ../../ に修正
+        new_path = re.sub(r"^(\.\./){3}(assets/)", r"../../\2", new_path)
+
+        return prefix + new_path + suffix
 
     # Markdown リンク内のパスを書き換え: [text](path) or [text](path#anchor)
-    pattern = r"(\[[^\]]*\]\()([^)#]+)((?:#[^)]*)?)\)"
+    # ![alt](path) の画像記法にもマッチする
+    pattern = r"(\!?\[[^\]]*\]\()([^)#]+)((?:#[^)]*)?)\)"
     return re.sub(pattern, lambda m: replace_link(m) + ")", content)
 
 
@@ -98,6 +105,14 @@ def build_docs():
                 content = md_file.read_text(encoding="utf-8")
                 content = rewrite_links(content)
                 dest_path.write_text(content, encoding="utf-8")
+
+    # assets/ を docs/assets/ にコピー
+    assets_src = ROOT / "assets"
+    assets_dest = DOCS_DIR / "assets"
+    if assets_src.exists():
+        if assets_dest.exists():
+            shutil.rmtree(assets_dest)
+        shutil.copytree(assets_src, assets_dest)
 
     print(f"Done: copied curriculum files to {DOCS_DIR}")
 
