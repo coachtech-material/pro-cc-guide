@@ -188,8 +188,8 @@ MECE 軸: **改善対象**（コード構造 / パフォーマンス）
   - ゴール: コード構造とパフォーマンスを改善し、テストで動作保証できる
   - 🏃 実践: CourseHub の2つの問題を改善する
     - Fat Controller の責務分離（コード構造）: CourseController@store を Form Request 抽出 + private メソッド分割でリファクタリングする。リファクタリング後のコードが rules/coding.md の規約に準拠しているか確認する。各ステップで `/test` を実行して動作保証する。Claude Code が Service 層を提案した場合は 3-2-2 で学んだ「知らない技術への向き合い方」を実践する（Plan Mode, `/test`, `/cost`）
-    - N+1 クエリの解消（パフォーマンス）: コース一覧（student 側）と生徒一覧（admin 側）の N+1 を Worktree で並列に解消する。`/test` で動作確認、`/context` でコンテキスト使用量を確認しながら進める（Worktree, `/test`, `/cost`, `/context`）
-  - 公式ドキュメント: [Worktrees](https://code.claude.com/docs/en/worktrees), [Costs](https://code.claude.com/docs/en/costs)
+    - N+1 クエリの解消（パフォーマンス）: コース一覧（student 側）の N+1 を Eager Loading で解消する。`/test` で動作確認、`/context` でコンテキスト使用量を確認しながら進める。生徒一覧（admin 側）の N+1 は同じパターンのため自主課題として案内する（`/test`, `/cost`, `/context`）
+  - 公式ドキュメント: [Costs](https://code.claude.com/docs/en/costs)
 
 ---
 
@@ -238,7 +238,7 @@ MECE 軸: **共有の対象**（コード / 環境）
 | Sub-agents | | ◎ | | | | |
 | Git（`/commit`, `/diff`） | | | | | | ◎ |
 | `/rewind` | | | ◎ | | | |
-| Worktree | | | | | ◎ | |
+| Worktree | | | | | | |
 | 権限管理 | | | | | | ◎ |
 | `/cost` | | | | | ◎ | |
 | PR・レビュー | | | | | | ◎ |
