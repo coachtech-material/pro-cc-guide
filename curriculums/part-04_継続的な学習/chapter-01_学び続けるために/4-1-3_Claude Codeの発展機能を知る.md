@@ -237,7 +237,7 @@ claude -p "このファイルの問題点をリストアップして" --output-f
 claude -p --bare "Hello"
 ```
 
-`--bare` フラグを使うと、CLAUDE.md、Skills、Hooks、Plugins、MCP、Auto Memory の読み込みをすべてスキップして起動します。スクリプトから呼び出す場合に、余計な設定の影響を受けずに実行できます。
+`--bare` フラグを使うと、CLAUDE.md、Skills、Hooks、プラグイン同期、LSP（Language Server Protocol）、Auto Memory の読み込みをすべてスキップして起動します。MCP サーバーも `--mcp-config` で明示的に指定しない限り読み込まれません。スクリプトから呼び出す場合に、余計な設定の影響を受けずに実行できます。
 
 > 💡 Part 2 で学んだ GitHub Actions での PR レビュー（[2-3-8 GitHub Actions](../../part-02_Claude%20Codeの基礎/chapter-03_機能を使いこなす/2-3-8_GitHub%20Actions.md)）は、この Agent SDK を活用した例です。`claude -p` で非対話的に実行し、結果を PR のコメントとして投稿していました。
 
