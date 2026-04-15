@@ -94,7 +94,7 @@ Claude Code には **公式マーケットプレイス**（`claude-plugins-offic
 
 > 📝 Plugin 名は公式マーケットプレイス（`anthropics/claude-plugins-official`）で公開されている実際の名前です。LSP 系は言語名に `-lsp` が付く命名で、Python は `pyright-lsp`、Go は `gopls-lsp` のように実装に使っている LSP サーバー名を採用しているものもあります。
 
-> 💡 Pro生 が Laravel で開発する場合、`php-lsp` Plugin（PHP の LSP による型チェック）は特に有用です。加えて、外部マーケットプレイスの `laravel-boost` Plugin は Laravel に特化した補助機能を提供するので、余裕があれば導入を検討してください。
+> 💡 Laravel で開発する場合、`php-lsp` Plugin（PHP の LSP による型チェック）は特に有用です。加えて、外部マーケットプレイスの `laravel-boost` Plugin は Laravel に特化した補助機能を提供するので、余裕があれば導入を検討してください。
 
 ### Plugin の管理コマンド
 

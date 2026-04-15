@@ -83,7 +83,7 @@ gh auth login
 gh auth status
 ```
 
-> 📝 `gh` は GitHub が公式に提供する CLI ツールです。Pro生 はブラウザで GitHub を使っていると思いますが、`gh` を使うとターミナルから PR の作成、Issue の操作、リポジトリの管理ができます。Claude Code と組み合わせると、ブラウザを開かずに GitHub のワークフローが完結します。
+> 📝 `gh` は GitHub が公式に提供する CLI ツールです。普段はブラウザで GitHub を使っている方が多いと思いますが、`gh` を使うとターミナルから PR の作成、Issue の操作、リポジトリの管理ができます。Claude Code と組み合わせると、ブラウザを開かずに GitHub のワークフローが完結します。
 
 ### Git の状態を自動で把握
 
