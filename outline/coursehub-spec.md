@@ -634,7 +634,7 @@ class UpdateEnrollmentStatus
 
 | モデル | 件数 | 備考 |
 |---|---|---|
-| User | 55件 | admin 1, coach 3, student 51 |
+| User | 55件 | admin 1 (`admin@coursehub.com`), coach 3 (`coach1〜3@coursehub.com`), student 51（うち1人は教材ハンズオン用の固定アカウント `student@coursehub.com`、残り50人は Factory でランダム生成） |
 | Category | 5件 | Web開発, モバイル, データベース, インフラ, AI/ML |
 | Tag | 15件 | PHP, Laravel, JavaScript, React, Docker, Git 等 |
 | Course | 10件 | coach 3名が各2〜4件。うち1件は draft、1件は archived |
@@ -650,7 +650,7 @@ class UpdateEnrollmentStatus
 ### 特記事項
 
 - N+1 の体感に十分なデータ量（student 51名、コース10件 × 各種リレーション）
-- 進捗率バグの再現: 少なくとも1コースに `is_published=false` のレッスンがあり、そのコースに受講中の student がいる
+- 進捗率バグの再現: 少なくとも1コースに `is_published=false` のレッスンがあり、そのコースに受講中の student がいる。教材で案内する `student@coursehub.com` は最初のコース（Laravel入門）に active で登録され、公開レッスンを全て完了済み → バグ未修正だと進捗率 < 100% で表示される
 - 500エラーの再現: 問題0件の Quiz がある、または全問未回答で送信できる状態
 - 不合格 Submission: passing_score 未達の Submission が存在し、再受験機能の開発タスクで使える
 - Factory を使用し、データの自然さを確保する
